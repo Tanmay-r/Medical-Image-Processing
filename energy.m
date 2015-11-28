@@ -8,7 +8,7 @@ d = 0;
 e = 0;
 offset = 5;
 
-load('C:\Users\tanmay\Downloads\Medical Image Processing\project\input\imagesfl60.mat')
+load('C:\Users\Tanmay\Downloads\Acads\Medical Image Processing\Medical-Image-Processing\input\imagefl60.mat')
 numHistory = 1800;
 
 index = 1;
@@ -20,7 +20,7 @@ Vx = zeros(numPoints, 1);
 Vy = zeros(numPoints, 1);
 I = zeros(numPoints, 1);
 
-newImage(:,:) = imagesfl60(1,:, :);
+newImage(:,:) = imagefl60(1,:, :);
 for i = 1:numPoints
     seqX(i,1) = point(i, 1);
     seqY(i,1) = point(i, 2);
@@ -31,7 +31,7 @@ end
 
 for index = 2:1800
     index
-    newImage(:,:) = imagesfl60(index,:, :);
+    newImage(:,:) = imagefl60(index,:, :);
     level = graythresh(newImage);
     bw = im2bw(newImage,level);
     newImage = newImage.*uint8(bw);

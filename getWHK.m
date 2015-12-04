@@ -1,9 +1,9 @@
-Ax = zeros(1800, 3);
-Ay = zeros(1800, 3);
-Bx = zeros(1800, 1);
-By = zeros(1800, 1);
+Ax = zeros(1400, 3);
+Ay = zeros(1400, 3);
+Bx = zeros(1400, 1);
+By = zeros(1400, 1);
 index = 19;
-for i = 1:1800
+for i = 200:1600
     Ax(i, 1) = 1;
     Ax(i, 2) = cos(i/30);
     Ax(i, 3) = - sin(i/30);

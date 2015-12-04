@@ -1,5 +1,5 @@
 %Image 1
-I(:, :) = imagefl60(index,:, :);
+I(:, :) = imagesfl60(index,:, :);
 %imshow(I)
 level = graythresh(I);
 bw = im2bw(I,level);
